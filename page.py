@@ -53,7 +53,6 @@ class CartPage(BasePage):
         """Gets the total cost of order"""
         return float(self.driver.find_element(*CartPageLocators.TOTAL_ROW).find_element_by_class_name('price-display').text.lstrip('$'))
 
-
     def get_cart_rows_count(self):
         """Returns the count of rows in the shopping cart"""
         return len(self.driver.find_elements(*CartPageLocators.CART_ROW))

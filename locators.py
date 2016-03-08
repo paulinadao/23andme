@@ -48,7 +48,6 @@ class ShippingPageLocators(object):
 
     CONTINUE_BUTTON = (By.CLASS_NAME, 'button-continue')
 
-
 class VerificationPageLocators(object):
     """A class for verification page locators"""
 

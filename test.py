@@ -10,8 +10,6 @@ class TwentyThreeandMeTest(unittest.TestCase):
 		self.driver.maximize_window()
 		self.driver.get("http://store.23andme.com/en-us/")
 
-
-
 	def test_add_product_to_cart_and_enter_shipping_information(self):
 		"""Adds 5 tests to cart and enters in shipping information"""
 		cart_page = page.CartPage(self.driver)
@@ -54,7 +52,6 @@ class TwentyThreeandMeTest(unittest.TestCase):
 
 		verification_page = page.VerificationPage(self.driver)
 		verification_page.verify_unverified_information(first_name, last_name, address, city, zipcode)
-
 
 	def tearDown(self):
 		self.driver.close()
